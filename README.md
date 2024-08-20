@@ -3,6 +3,8 @@
 THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/thedges/Disclaimer/master/disclaimer.txt).
 
 Sample component for querying local data cloud for work order details
+
+https://github.com/thedges/PS2WorkOrdersDC/blob/main/PS2WorkOrdersDC.jpg
      
 <a href="https://githubsfdeploy.herokuapp.com?owner=thedges&repo=PS2WorkOrdersDC&ref=main">
   <img alt="Deploy to Salesforce"
