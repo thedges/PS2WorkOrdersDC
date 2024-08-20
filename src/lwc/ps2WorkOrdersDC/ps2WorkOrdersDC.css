@@ -1,0 +1,9 @@
+:host {
+    --sds-c-card-color-backgroundX: #f2f2f2;
+    --lwc-tableColorBackgroundHeader : #f2f2f2;
+    --lwc-fontWeightBold: 900;
+}
+
+.col-header {
+    font-weight: bold;
+}

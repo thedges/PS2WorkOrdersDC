@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title={titleString} icon-name={iconName}>
+        <div slot="actions">
+            <lightning-button-icon icon-name="utility:refresh" alternative-text="Refresh" title="Refresh"
+                onclick={handleRefresh} size="medium"></lightning-button-icon>
+        </div>
+        <div if:true={isLoading} style="height: 200px; position:relative">
+            <lightning-spinner variant="base" size="medium"></lightning-spinner>
+        </div>
+        <div if:false={isLoading}>
+            <lightning-datatable key-field="id" data={data} columns={columns} sorted-by={sortBy}
+                sorted-direction={sortDirection} onsort={doSorting} hide-checkbox-column show-row-number-column>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
