@@ -1,4 +1,5 @@
 <template>
+    <div if:false={hide}>
     <lightning-card title={titleString} icon-name={iconName}>
         <div slot="actions">
             <lightning-button-icon icon-name="utility:refresh" alternative-text="Refresh" title="Refresh"
@@ -13,4 +14,5 @@
             </lightning-datatable>
         </div>
     </lightning-card>
+</div>
 </template>

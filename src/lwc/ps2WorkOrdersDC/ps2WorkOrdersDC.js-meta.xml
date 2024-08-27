@@ -11,6 +11,7 @@
         <targetConfig targets="lightningCommunity__Default">
             <property name="title" type="String" default="PublicWorks Work Orders" label="Card Title" description="The title for the card"></property>
             <property name="iconName" type="String" default="custom:custom19" label="Icon Name" description="The SLDS icon name for card title"></property>
+            <property name="hideForNoRecs" type="Boolean" default="false" label="Hide for zero records" description="Hide the component if no records returned"></property>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

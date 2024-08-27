@@ -24,13 +24,24 @@ export default class Ps2WorkOrdersDC extends LightningElement {
     ];
     @api title = 'PublicWorks Work Orders';
     @api iconName = 'custom:custom19';
-    rowCount = 0;
+    @api hideForNoRecs = false;
+    @api rowCount = 0;
     isLoading = true;
     sortBy;
     sortDirection;
 
+    @api
     get titleString() {
         return this.title + ' (' + this.rowCount + ')';
+    }
+
+    @api
+    get hide() {
+        if (this.hideForNoRecs == true && this.rowCount == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     connectedCallback() {
